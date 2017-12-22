@@ -13,17 +13,17 @@ import com.telegram.bot.bots.RomanianDossierCheckerBot;
 @Component
 public class TelegramBotRegister implements CommandLineRunner {
 
-    private RomanianDossierCheckerBot xmlTelegramBot;
+    private RomanianDossierCheckerBot romanianDossierCheckerBot;
 
     @Autowired
-    public TelegramBotRegister(RomanianDossierCheckerBot xmlTelegramBot) {
-        this.xmlTelegramBot = xmlTelegramBot;
+    public TelegramBotRegister(RomanianDossierCheckerBot romanianDossierCheckerBot) {
+        this.romanianDossierCheckerBot = romanianDossierCheckerBot;
     }
 
     @Override
     public void run(String... args) throws Exception {
         TelegramBotsApi botsApi = new TelegramBotsApi();
-        botsApi.registerBot(xmlTelegramBot);
+        botsApi.registerBot(romanianDossierCheckerBot);
     }
 }
 
