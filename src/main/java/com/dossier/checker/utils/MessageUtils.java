@@ -15,7 +15,7 @@ public class MessageUtils {
     public static final String START_COMMAND = "/start";
 
     public static final String WELCOMING_MESSAGE = "Willkommen doamna sau domnule, \n\nI am here to check the state of your dossier." +
-            "\n\nJust type your ID (dossier number: number/year, Ex.: 1763/2013) below:";
+            "\n\nJust type your ID (dossier number: number/year, Example: 1763/2013) below:";
 
     public static SendMessage prepareMessage(long chatId, String messageToSend) {
         SendMessage sendMessage = new SendMessage();
@@ -34,8 +34,7 @@ public class MessageUtils {
     }
 
     public static String generateLookupMessage(String lookupValue) {
-        return "I am looking for a dossier by ID: " + lookupValue
-                + "\nMostly it takes up to 7 minutes. Make yourself a cup of coffee :).";
+        return "I am looking for a dossier by ID: " + lookupValue;
     }
 
     public static String generateSuccessfulLookupMessage(Subject foundSubjects) {
