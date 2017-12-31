@@ -29,25 +29,25 @@ public class SubjectServiceImpl implements SubjectService {
     }
 
     @Override
-    public Subject findByLastName(String lastName) {
+    public List<Subject> findByLastName(String lastName) {
         if (lastName == null || lastName.isEmpty()) {
             LOGGER.info("Unable to get subject by last name, since last name is not specified");
             return null;
         }
 
         LOGGER.info("Looking for subject with the name {}", lastName);
-        return subjectRepository.findByLastName(lastName);
+        return subjectRepository.findByLastNameIgnoreCase(lastName);
     }
 
     @Override
-    public Subject findByFirstName(String firstName) {
+    public List<Subject> findByFirstName(String firstName) {
         if (firstName == null || firstName.isEmpty()) {
             LOGGER.info("Unable to get subject by first name, since first name is not specified");
             return null;
         }
 
         LOGGER.info("Looking for subject with the first name {}", firstName);
-        return subjectRepository.findByFirstName(firstName);
+        return subjectRepository.findByFirstNameIgnoreCase(firstName);
     }
 
     @Override
