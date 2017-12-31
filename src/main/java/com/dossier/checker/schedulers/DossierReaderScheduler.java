@@ -14,7 +14,7 @@ import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 import com.dossier.checker.utils.DateUtils;
-import com.dossier.checker.services.RomanianDossierCheckerService;
+import com.dossier.checker.services.common.RomanianDossierCheckerService;
 
 @Component
 public class DossierReaderScheduler {

@@ -1,4 +1,4 @@
-package com.dossier.checker.services;
+package com.dossier.checker.services.common;
 
 import java.net.URI;
 import java.util.Date;

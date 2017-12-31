@@ -9,6 +9,7 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
 
+import com.dossier.checker.services.common.RomanianDossierCheckerService;
 import com.dossier.checker.services.handlers.SubjectHandler;
 import com.dossier.checker.services.parsers.WebPageParser;
 

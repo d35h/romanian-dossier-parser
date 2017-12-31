@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.dossier.checker.domain.Subject;
-import com.dossier.checker.services.RomanianDossierCheckerService;
+import com.dossier.checker.services.common.RomanianDossierCheckerService;
 
 @Repository
 public class SubjectServiceImpl implements SubjectService {
